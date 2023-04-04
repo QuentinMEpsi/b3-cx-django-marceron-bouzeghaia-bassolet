@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>ResaSchool</title>
+        <meta charset="utf-8">
+        <link href="{% static 'css/global.css' %}" rel="stylesheet" />
+        <link href="{% static 'css/home.css' %}" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <span>RESASCHOOL</span>
+            <ul>
+                <li><a href="{% url 'home' %}">Accueil</a></li>
+                <li><a href="../book">Reservation</a></li>
+                <li><a href="{% url 'logout' %}">Déconnexion</a></li>
+            </ul>
+        </header>
+        {% block content %}
+
+        {% endblock %}
+    </body>
+</html>

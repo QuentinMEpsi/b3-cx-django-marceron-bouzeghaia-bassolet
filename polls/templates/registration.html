@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>ResaSchool</title>
+        <meta charset="utf-8">
+        <link href="{% static 'css/global.css' %}" rel="stylesheet" />
+        <link href="{% static 'css/connect.css' %}" rel="stylesheet" />
+    </head>
+    <body>
+        <span class="siteName">RESASCHOOL</span>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
