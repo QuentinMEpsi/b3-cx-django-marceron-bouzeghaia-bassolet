@@ -8,26 +8,26 @@
         <link href="{% static 'css/connect.css' %}" rel="stylesheet" />
     </head>
     <body>
-        <form class="content">
+        <form action="" class="content">
             <label for="firstname">
-                <input id="firstname" type="text" placeholder="Nom"/>
+                <input id="firstname" type="text" placeholder="Nom" required/>
             </label>
             <label for="lastname">
-                <input id="lastname" type="text" placeholder="Prénom"/>
+                <input id="lastname" type="text" placeholder="Prénom" required/>
             </label>
             <label for="mail">
-                <input id="mail" type="text" placeholder="Mail"/>
+                <input id="mail" type="text" placeholder="Mail" required/>
             </label>
             <label for="phone">
-                <input id="phone" type="tel" placeholder="Téléphone"/>
+                <input id="phone" type="tel" placeholder="Téléphone" required/>
             </label>
             <label for="password">
-                <input id="password" type="password" placeholder="Mot de passe"/>
+                <input id="password" type="password" placeholder="Mot de passe" required/>
             </label>
             <label for="confirmPassword">
-                <input id="confirmPassword" type="password" placeholder="Confirmation mot de passe"/>
+                <input id="confirmPassword" type="password" placeholder="Confirmation mot de passe" required/>
             </label>
-            <button>S'inscrire</button>
+            <button type="submit">S'inscrire</button>
         </form>
         <span>Déjà un compte ? <a href="../">Se Connecter</a></span>
     </body>
