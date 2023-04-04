@@ -1,0 +1,15 @@
+{% extends 'registration.html' %}
+
+{% block content %}
+    <form action="{% url 'signin' %}" method="post" class="content">
+        {% csrf_token %}
+        <label for="mail">
+            <input id="mail" name="mail" type="text" placeholder="Identifiant" required/>
+        </label>
+        <label for="password">
+            <input id="password" name="password" type="password" placeholder="Mot de passe" required/>
+        </label>
+        <button type="submit">Connexion</button>
+    </form>
+    <a href="{% url 'signup' %}">Créer un compte</a>
+{% endblock %}

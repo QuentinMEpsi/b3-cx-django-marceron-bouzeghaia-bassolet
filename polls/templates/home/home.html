@@ -1,42 +1,13 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <title>Connexion</title>
-        <meta charset="utf-8">
-        <link href="{% static 'css/global.css' %}" rel="stylesheet" />
-        <link href="{% static 'css/home.css' %}" rel="stylesheet" />
-    </head>
-    <body>
-        <header>
-            <span>RESASCHOOL</span>
-            <ul>
-                <li><a href="../home">Accueil</a></li>
-                <li><a>Reservation</a></li>
-                <li><a href="../">Déconnexion</a></li>
-            </ul>
-        </header>
-        <content>
-            <div class="reservation">
-                <div>
-                    <div>
-                        <span>Réservation 1</span>
-                        <span>DATE</span>
-                    </div>
-                    <span>Voici le premiere évenement !</span>
-                </div>
-                <button>Détails</button>
+{% extends 'homeBase.html' %}
+
+{% block content %}
+    <content>
+        <div class="reservation">
+            <div>
+                <span>Réservation 1</span>
+                <span>Voici le premiere évenement !</span>
             </div>
-            <div class="reservation">
-                <div>
-                    <div>
-                        <span>Réservation 1</span>
-                        <span>DATE</span>
-                    </div>
-                    <span>Voici le premiere évenement !</span>
-                </div>
-                <button>Détails</button>
-            </div>
-        </content>
-    </body>
-</html>
+            <button>Détails</button>
+        </div>
+    </content>
+{% endblock %}
